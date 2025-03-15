@@ -1,0 +1,145 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --font-base: "Source Sans 3", sans-serif;
+  --font-special: "Montserrat", sans-serif;
+
+  --color-page-bg: #444444;
+  --color-visual-bg: #f0f0f0;
+}
+
+
+body {
+  font-family: var(--font-base);
+  font-optical-sizing: auto;
+  margin: 0;
+  background: var(--color-page-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-special);
+  font-optical-sizing: auto;
+}
+
+.container {
+  width: 1040px;
+  margin-inline: auto;
+  background: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-family: var(--font-special);
+  font-weight: 900;
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-page-bg);
+  text-transform: uppercase;
+  font-family: var(--font-base);
+  font-size: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var(--color-visual-bg);
+  height: 500px;
+  padding-left: 40px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.banner__title,
+.banner__description {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  font-family: var(--font-special);
+}
+
+.banner__title {
+  font-size: 46px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.banner__description {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 0;
+}
+
+.shop__image {
+  flex: 1;
+  height: 50vh;
+}
+
+.shop__item {
+  width: 25%;
+}
+
+.visual {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.visual__content {
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-visual-bg);
+  padding-left: 20px;
+}
+
+.visual__description {
+  width: 80%;
+}
+
+.visual__title {
+  font-weight: normal;
+  font-size: 36px;
+  width: 80%;
+}
+
+.visual__image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.visual__photo {
+  width: 50%; 
+}
+
+.shop__price {
+  font-weight: bold;
+}
